@@ -25,7 +25,7 @@
 <!---- CODE JS ------>
 <!------------------->
 <script>
-export let content = "Player";
+	export let content = "Player";
 </script>
 
 

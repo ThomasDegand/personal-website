@@ -1,18 +1,10 @@
 <!---- MAIN PAGE ---->
 
 <!------------------->
-<!---- CODE CSS ----->
-<!------------------->
-<style>
-@import "./css/style.css";
-</style>
-
-
-<!------------------->
 <!---- CODE JS ------>
 <!------------------->
 <script>
-import Player from './elements/Player.svelte';
+	import Player from "./elements/Player.svelte";
 </script>
 
 
@@ -23,3 +15,10 @@ import Player from './elements/Player.svelte';
 	<h1 id="test">Test</h1>
 	<Player content="Test"></Player>
 </section>
+
+
+<!------------------->
+<!---- CODE CSS ----->
+<!------------------->
+<style>
+</style>
