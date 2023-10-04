@@ -1,2 +1,25 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<!---- MAIN PAGE ---->
+
+<!------------------->
+<!---- CODE CSS ----->
+<!------------------->
+<style>
+@import "./css/style.css";
+</style>
+
+
+<!------------------->
+<!---- CODE JS ------>
+<!------------------->
+<script>
+import Player from './elements/Player.svelte';
+</script>
+
+
+<!------------------->
+<!---- CODE HTML ---->
+<!------------------->
+<section>
+	<h1 id="test">Test</h1>
+	<Player content="Test"></Player>
+</section>
