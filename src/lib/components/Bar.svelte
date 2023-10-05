@@ -33,11 +33,15 @@
         if (!onBar) { pLoadOld = pLoad; }
         if (!onBarClick) {
             pLoad = (event.x - left)/width;
+            if (pLoad <= 0) { pLoad = 0; mouseOut(); mouseUp(); }
+            if (pLoad >= 1) { pLoad = 1; mouseOut(); mouseUp(); }
             onBar = true;
             cCursor = cLoad;
         }
         else {
             pFore = (event.x - left)/width;
+            if (pFore <= 0) { pFore = 0; mouseOut(); mouseUp(); }
+            if (pFore >= 1) { pFore = 1; mouseOut(); mouseUp(); }
             pLoad = pFore;
             pLoadOld = pFore;
             onBar = true;
